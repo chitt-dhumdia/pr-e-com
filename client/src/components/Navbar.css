@@ -1,0 +1,51 @@
+.navbar .brand {
+    color: #2874f0;
+}
+
+.navbar .brand:hover {
+    color: #2874f0;
+}
+
+.navbar .login,
+.navbar .cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #212529;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar .login:hover,
+.navbar .cart:hover {
+    color: #2874f0;
+}
+
+.cart{
+
+    position:relative;
+
+}
+
+.cart-count{
+
+    position:absolute;
+    top:-8px;
+    right:-10px;
+
+    width:22px;
+    height:22px;
+
+    background:red;
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:12px;
+    font-weight:700;
+
+}

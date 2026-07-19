@@ -1,0 +1,38 @@
+.top-navbar{
+    height:70px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    border-bottom:1px solid #dee2e6;
+}
+
+.admin-profile{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.admin-profile img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+}
+
+.admin-profile i{
+    font-size:20px;
+    cursor:pointer;
+}
+
+.admin-info{
+    text-align:right;
+}
+
+.admin-info h6{
+    margin:0;
+}
+
+.admin-info small{
+    color:gray;
+}

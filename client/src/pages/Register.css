@@ -1,0 +1,73 @@
+.register-page{
+    min-height:100vh;
+    background:#f5f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.register-page .register-card{
+    width:100%;
+    max-width:450px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.register-page .register-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 25px 60px rgba(0,0,0,.2);
+}
+
+.register-page .register-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.register-page .register-header h2{
+    color:#2874f0;
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.register-page .register-header p{
+    color:#666;
+    font-size:18px;
+    margin:0;
+}
+
+.register-page .form-label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.register-page .form-control{
+    height:50px;
+    border-radius:10px;
+    border:1px solid #dcdcdc;
+    box-shadow:none;
+}
+
+.register-page .form-control:focus{
+    border-color:#2874f0;
+    box-shadow:0 0 8px rgba(40,116,240,.2);
+}
+
+.register-page .register-btn{
+    background:#2874f0;
+    color:#fff;
+    height:50px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.register-page .register-btn:hover{
+    background:#0d5bd7;
+}

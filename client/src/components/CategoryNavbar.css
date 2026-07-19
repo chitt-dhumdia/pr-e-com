@@ -1,0 +1,41 @@
+.category-navbar{
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.category-navbar .container{
+    max-width: 1400px;
+}
+
+.category-navbar .row{
+    align-items: center;
+}
+
+.category-navbar .category-item{
+    cursor: pointer;
+    text-align: center;
+}
+
+.category-navbar .category-item .category-icon{
+    font-size: 28px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.category-navbar .category-item p{
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+}
+
+.category-navbar .category-item:hover .category-icon{
+    color: #2874f0;
+}
+
+.category-navbar .category-item:hover p{
+    color: #2874f0;
+}

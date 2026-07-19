@@ -1,0 +1,100 @@
+.slider-section{
+    margin-top:20px;
+}
+
+.slider-section .container{
+    position:relative;
+}
+
+.slider-section .swiper{
+    width:100%;
+}
+
+.slider-section .swiper-slide{
+    height:300px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.slider-section .swiper-slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.slider-section .prev-btn,
+.slider-section .next-btn{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:50px;
+    height:50px;
+
+    min-width:50px;
+    min-height:50px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:0;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+    cursor:pointer;
+
+    z-index:999;
+
+    overflow:hidden;
+
+}
+
+.slider-section .prev-btn i,
+.slider-section .next-btn i{
+
+    font-size:20px;
+
+    line-height:1;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+
+.slider-section .prev-btn{
+    left:-25px;
+}
+
+.slider-section .next-btn{
+    right:-25px;
+}
+
+.slider-section .prev-btn i,
+.slider-section .next-btn i{
+    font-size:22px;
+    color:#000;
+}
+
+.slider-section .prev-btn:hover,
+.slider-section .next-btn:hover{
+    background:#2874f0;
+}
+
+.slider-section .prev-btn:hover i,
+.slider-section .next-btn:hover i{
+    color:#fff;
+}
