@@ -15,6 +15,13 @@ import Cart from "./pages/Cart/Cart.jsx";
 function App() {
 
   const location = useLocation();
+  const PrivateRoute = ({ children }) => {
+
+    const token = localStorage.getItem("token");
+
+    return token ? children : <Navigate to="/login" />;
+
+};
 
   const isAdminPage = location.pathname.startsWith("/admin");
 
@@ -32,28 +39,48 @@ function App() {
         <Route path="/register" element={<Register />} />
 
         <Route
-          path="/admin/dashboard"
-          element={<Dashboard />}
-        />
-
-        <Route
-            path="/admin/category/add"
-            element={<AddCategory/>}
-        />
-
-         <Route
-          path="/admin/category/all"
-          element={<AllCategory />}
-      />
-
-      <Route
-      path="/admin/product/add"
-      element={<AddProduct />}
+    path="/admin/dashboard"
+    element={
+        <PrivateRoute>
+            <Dashboard />
+        </PrivateRoute>
+    }
 />
 
-    <Route
+<Route
+    path="/admin/category/add"
+    element={
+        <PrivateRoute>
+            <AddCategory />
+        </PrivateRoute>
+    }
+/>
+
+<Route
+    path="/admin/category/all"
+    element={
+        <PrivateRoute>
+            <AllCategory />
+        </PrivateRoute>
+    }
+/>
+
+<Route
+    path="/admin/product/add"
+    element={
+        <PrivateRoute>
+            <AddProduct />
+        </PrivateRoute>
+    }
+/>
+
+<Route
     path="/admin/product/all"
-    element={<AllProduct />}
+    element={
+        <PrivateRoute>
+            <AllProduct />
+        </PrivateRoute>
+    }
 />
 
     <Route

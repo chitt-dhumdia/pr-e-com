@@ -49,8 +49,8 @@
 
 }
 
-.action-btn{
-    width:60px;
+.modal-footer .action-btn{
+    width:30px;
     height:35px;
     display:inline-flex;
     align-items:center;

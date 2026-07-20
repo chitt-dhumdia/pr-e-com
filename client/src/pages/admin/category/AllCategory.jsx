@@ -213,7 +213,7 @@ const AllCategory = () => {
                                                     </button>
 
                                                     <button
-                                                        className="btn btn-danger btn-sm"
+                                                        className="btn btn-danger mt-2 btn-sm"
                                                         onClick={() =>
                                                             handleDelete(item._id)
                                                         }
@@ -287,7 +287,7 @@ const AllCategory = () => {
                                 <div className="modal-footer">
 
                                     <button
-                                        className="btn btn-warning btn-sm me-2 action-btn"
+                                        className="btn btn-warning btn-sm  action-btn"
                                     >
                                         Close
                                     </button>

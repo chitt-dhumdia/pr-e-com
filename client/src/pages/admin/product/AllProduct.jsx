@@ -252,7 +252,7 @@ const AllProduct = () => {
                                                 <td>
 
                                                     <button
-                                                        className="btn btn-warning btn-sm me-2"
+                                                        className="btn btn-warning btn-sm "
                                                         onClick={() => {
 
                                                             setEditProduct({
@@ -274,7 +274,7 @@ const AllProduct = () => {
                                                     </button>
 
                                                     <button
-                                                        className="btn btn-danger btn-sm"
+                                                        className="btn btn-danger btn-sm mt-2"
                                                         onClick={() => handleDelete(item._id)}
                                                     >
 

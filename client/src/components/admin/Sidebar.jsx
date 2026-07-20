@@ -1,8 +1,28 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import "./Sidebar.css";
 
 const Sidebar = () => {
+
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+
+        const confirmLogout = window.confirm(
+            "Are you sure you want to logout?"
+        );
+
+        if (!confirmLogout) return;
+
+        localStorage.removeItem("token");
+
+        toast.success("Logout Successfully.");
+
+        navigate("/login");
+
+    };
 
     const location = useLocation();
 
@@ -162,7 +182,10 @@ const Sidebar = () => {
 
             </div>
 
-            <button className="logout-btn">
+            <button
+                className="logout-btn"
+                onClick={handleLogout}
+            >
 
                 <i className="bi bi-box-arrow-right"></i>
 
